@@ -1,5 +1,21 @@
 <resources>
     <string name="app_name">DaggerTest</string>
-    <string name="activity_main_finish">Finish</string>
-    <string name="activity_main_show_result">Show result</string>
+    <string name="activity_main_finish">Salvar Consumidor</string>
+    <string name="activity_main_show_result">Resultado</string>
+    <string name="activity_main_name">Nome</string>
+    <string name="activity_main_cpf">CPF</string>
+    <string name="activity_main_last_name">Sobrenome</string>
+    <string name="activity_main_birthday">Nascimento</string>
+    <string name="activity_main_street">Rua</string>
+    <string name="activity_main_number">Número</string>
+    <string name="activity_main_complement">Complemento</string>
+    <string name="activity_main_neighborhood">Bairro</string>
+    <string name="activity_main_zip_code">CEP</string>
+    <string name="activity_main_city">Cidade</string>
+    <string name="activity_main_state">Estado</string>
+    <string name="activity_main_product_id">ID do produto</string>
+    <string name="activity_main_product_informations">Informação dos produtos</string>
+    <string name="activity_main_product_description">Descrição</string>
+    <string name="activity_main_product_quantity">Quantidade</string>
+    <string name="activity_main_add_product">Adicionar Produto</string>
 </resources>

@@ -1,35 +1,151 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<layout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="lucas.bicca.daggertest.MainActivity">
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <ScrollView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent"
+        tools:context="lucas.bicca.daggertest.MainActivity">
 
-        <EditText
-            android:id="@+id/activity_main_name"
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content">
 
-    </ScrollView>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-    <Button
-        android:id="@+id/activity_main_finish_click"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/activity_main_finish"
-        android:onClick="onFinishClick"/>
+                <EditText
+                    android:id="@+id/activity_main_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/activity_main_name"/>
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/activity_main_show_result"
-        android:layout_below="@id/activity_main_finish_click"
-        android:onClick="onShowResultClick"/>
+                <EditText
+                    android:id="@+id/activity_main_last_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/activity_main_name"
+                    android:hint="@string/activity_main_last_name"/>
 
-</RelativeLayout>
+                <EditText
+                    android:id="@+id/activity_main_cpf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/activity_main_last_name"
+                    android:hint="@string/activity_main_cpf"/>
+
+                <EditText
+                    android:id="@+id/activity_main_birth_day"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/activity_main_cpf"
+                    android:hint="@string/activity_main_birthday"/>
+
+                <EditText
+                    android:id="@+id/activity_main_street"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/activity_main_birth_day"
+                    android:hint="@string/activity_main_street"/>
+
+                <EditText
+                    android:id="@+id/activity_main_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/activity_main_street"
+                    android:hint="@string/activity_main_number"/>
+
+                <EditText
+                    android:id="@+id/activity_main_complement"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/activity_main_number"
+                    android:hint="@string/activity_main_complement"/>
+
+                <EditText
+                    android:id="@+id/activity_main_neighborhood"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/activity_main_complement"
+                    android:hint="@string/activity_main_neighborhood"/>
+
+                <EditText
+                    android:id="@+id/activity_main_zip_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/activity_main_neighborhood"
+                    android:hint="@string/activity_main_zip_code"/>
+
+                <EditText
+                    android:id="@+id/activity_main_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/activity_main_zip_code"
+                    android:hint="@string/activity_main_city"/>
+
+                <EditText
+                    android:id="@+id/activity_main_state"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/activity_main_city"
+                    android:hint="@string/activity_main_state"/>
+
+                <Button
+                    android:id="@+id/activity_main_finish_click"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/activity_main_state"
+                    android:onClick="onFinishClick"
+                    android:text="@string/activity_main_finish"/>
+
+                <TextView
+                    android:id="@+id/activity_main_product_informations"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/activity_main_finish_click"
+                    android:hint="@string/activity_main_product_informations"/>
+
+                <EditText
+                    android:id="@+id/activity_main_product_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/activity_main_product_informations"
+                    android:hint="@string/activity_main_product_id"
+                    android:inputType="number"/>
+
+                <EditText
+                    android:id="@+id/activity_main_product_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/activity_main_product_id"
+                    android:hint="@string/activity_main_product_description"/>
+
+                <EditText
+                    android:id="@+id/activity_main_product_quantity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/activity_main_product_description"
+                    android:hint="@string/activity_main_product_quantity"
+                    android:inputType="number"/>
+
+                <Button
+                    android:id="@+id/activity_main_add_product"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/activity_main_product_quantity"
+                    android:layout_toEndOf="@id/activity_main_product_quantity"
+                    android:text="@string/activity_main_add_product"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/activity_main_product_quantity"
+                    android:onClick="onShowResultClick"
+                    android:text="@string/activity_main_show_result"/>
+            </RelativeLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+</layout>
