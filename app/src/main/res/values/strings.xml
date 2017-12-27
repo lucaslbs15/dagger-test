@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">DaggerTest</string>
+    <string name="activity_main_finish">Finish</string>
+    <string name="activity_main_show_result">Show result</string>
+</resources>
