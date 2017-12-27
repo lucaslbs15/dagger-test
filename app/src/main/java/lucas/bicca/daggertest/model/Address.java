@@ -1,8 +1,10 @@
 package lucas.bicca.daggertest.model;
 
+import java.io.Serializable;
+
 import javax.inject.Inject;
 
-public class Address {
+public class Address implements Serializable {
 
     private String street;
     private int number;

@@ -18,4 +18,7 @@
     <string name="activity_main_product_description">Descrição</string>
     <string name="activity_main_product_quantity">Quantidade</string>
     <string name="activity_main_add_product">Adicionar Produto</string>
+    <string name="activity_main_saved">purchase saved</string>
+    <string name="activity_main_description" formatted="true">Description: %s</string>
+    <string name="activity_main_add_product_error">Erro ao adicionar o produto</string>
 </resources>

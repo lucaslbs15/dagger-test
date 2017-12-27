@@ -1,5 +1,7 @@
 package lucas.bicca.daggertest.module;
 
+import java.util.Date;
+
 import dagger.Module;
 import dagger.Provides;
 import lucas.bicca.daggertest.model.Purchase;
@@ -16,6 +18,6 @@ public class PurchaseModule {
 
     @Provides
     Purchase providePurchase() {
-        return new Purchase(shoppingCart);
+        return new Purchase(0, shoppingCart, new Date());
     }
 }

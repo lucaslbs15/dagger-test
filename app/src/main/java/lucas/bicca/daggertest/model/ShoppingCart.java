@@ -1,11 +1,12 @@
 package lucas.bicca.daggertest.model;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
 import javax.inject.Inject;
 
-public class ShoppingCart {
+public class ShoppingCart implements Serializable {
 
     private int id;
     private String date;

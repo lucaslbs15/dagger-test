@@ -1,6 +1,8 @@
 package lucas.bicca.daggertest.model;
 
-public class Product {
+import java.io.Serializable;
+
+public class Product implements Serializable {
 
     private int id;
     private String description;

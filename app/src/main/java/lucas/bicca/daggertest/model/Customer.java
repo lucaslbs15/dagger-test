@@ -1,8 +1,10 @@
 package lucas.bicca.daggertest.model;
 
+import java.io.Serializable;
+
 import javax.inject.Inject;
 
-public class Customer {
+public class Customer implements Serializable {
 
     private String cpf;
     private String name;
